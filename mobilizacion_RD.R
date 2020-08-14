@@ -1,6 +1,6 @@
 # This is a script is meant to create a map of the Dominican Republic that plots
 # The google Mobility data by province
-
+rm(list = ls())
 pacman::p_load(tidyverse, 
                readxl, 
                lubridate)
@@ -54,4 +54,3 @@ dr %>%
 
 
 ggsave("mobilizacion_RD.jpg", scale = 1.2)
-  
